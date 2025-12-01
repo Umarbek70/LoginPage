@@ -11,7 +11,7 @@ export default function Login() {
     e.preventDefault();
 
     // Email va password bo'sh bo'lmasa dashboardga o'tadi
-    if (email !== "" && password!== "") {
+    if (email.trim() !== "" && password.trim() !== "") {
       navigate("/dashboard");
     } else {
       alert("Email va passwordni kiriting!");
